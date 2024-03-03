@@ -1,0 +1,37 @@
+body{
+    background-color: blue;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+}
+#board{
+    display: grid;
+    grid-template-columns: repeat(var(--GRID_WIDTH), max-content);
+    justify-content: center;
+    align-items: center;
+}
+.title {
+    text-align: center;
+    font-size: 300%;
+    margin: 20px;
+}
+#resetButton {
+    margin: 10px;
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+.cell {
+    width: 90px;
+    aspect-ratio: 1/1;
+    background-color: rgb(255, 255, 255);
+    border: 5px solid navy;
+    cursor: pointer;
+    border-radius: 50%;
+    margin: 5px;
+}
+.red {
+    background-color: red;
+}
+.yellow {
+    background-color: yellow;
+}
